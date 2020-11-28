@@ -11,6 +11,12 @@ public class PostContent {
     private String canAddImage;
     private String canAddAudio;
     private String canAddVideo;
+    private CommentInfo commentInfo;
+    private LikeInfo likesInfo;
+    private ViewsInfo viewsInfo;
+    private RepostInfo repostInfo;
+    private Geo geo;
+    private PostContent postContent;
     private boolean registeredUser;
 
     public int getPostId() {
@@ -91,6 +97,54 @@ public class PostContent {
 
     public void setCanAddVideo(String canAddVideo) {
         this.canAddVideo = canAddVideo;
+    }
+
+    public CommentInfo getCommentInfo() {
+        return commentInfo;
+    }
+
+    public void setCommentInfo(CommentInfo commentInfo) {
+        this.commentInfo = commentInfo;
+    }
+
+    public LikeInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikeInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public ViewsInfo getViewsInfo() {
+        return viewsInfo;
+    }
+
+    public void setViewsInfo(ViewsInfo viewsInfo) {
+        this.viewsInfo = viewsInfo;
+    }
+
+    public RepostInfo getRepostInfo() {
+        return repostInfo;
+    }
+
+    public void setRepostInfo(RepostInfo repostInfo) {
+        this.repostInfo = repostInfo;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public PostContent getPostContent() {
+        return postContent;
+    }
+
+    public void setPostContent(PostContent postContent) {
+        this.postContent = postContent;
     }
 
 

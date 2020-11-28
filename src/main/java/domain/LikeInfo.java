@@ -4,7 +4,6 @@ public class LikeInfo {
     private int quantity;
     private boolean userLike;
     private boolean canLike;
-    private boolean canRepost;
 
     public int getQuantity() {
         return quantity;
@@ -30,11 +29,4 @@ public class LikeInfo {
         this.canLike = canLike;
     }
 
-    public boolean isCanRepost() {
-        return canRepost;
-    }
-
-    public void setCanRepost(boolean canRepost) {
-        this.canRepost = canRepost;
-    }
 }
