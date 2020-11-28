@@ -1,6 +1,16 @@
 package domain;
 
 public class CommentInfo {
+    private int quantity;
+    private int userCommentId;
+    private String textComment;
+    private String imageCommentUrl;
+    private String audioCommentUrl;
+    private String videoCommentUrl;
+    private int date;
+    private boolean canClose;
+    private boolean canOpen;
+
     public int getQuantity() {
         return quantity;
     }
@@ -73,14 +83,6 @@ public class CommentInfo {
         this.canOpen = canOpen;
     }
 
-    private int quantity;
-    private int userCommentId;
-    private String textComment;
-    private String imageCommentUrl;
-    private String audioCommentUrl;
-    private String videoCommentUrl;
-    private int date;
-    private boolean canClose;
-    private boolean canOpen;
+
 
 }

@@ -1,6 +1,18 @@
 package domain;
 
 public class PostContent {
+    private int postId;
+    private int ownerId;
+    private String text;
+    private int isPinned;
+    private boolean markedAsDds;
+    private int link;
+    private String imageUrl;
+    private String canAddImage;
+    private String canAddAudio;
+    private String canAddVideo;
+    private boolean registeredUser;
+
     public int getPostId() {
         return postId;
     }
@@ -25,6 +37,22 @@ public class PostContent {
         this.text = text;
     }
 
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public boolean markedAsDds() {
+        return markedAsDds;
+    }
+
+    public void setMarkedAsDds(boolean markedAsDds) {
+        this.markedAsDds = markedAsDds;
+    }
+
     public int getLink() {
         return link;
     }
@@ -41,29 +69,30 @@ public class PostContent {
         this.imageUrl = imageUrl;
     }
 
-    public boolean isCanAddImage() {
+    public String getCanAddImage() {
         return canAddImage;
     }
 
-    public void setCanAddImage(boolean canAddImage) {
+    public void setCanAddImage(String canAddImage) {
         this.canAddImage = canAddImage;
     }
 
-    public boolean isCanAddAudio() {
+    public String getCanAddAudio() {
         return canAddAudio;
     }
 
-    public void setCanAddAudio(boolean canAddAudio) {
+    public void setCanAddAudio(String canAddAudio) {
         this.canAddAudio = canAddAudio;
     }
 
-    public boolean isCanAddVideo() {
+    public String getCanAddVideo() {
         return canAddVideo;
     }
 
-    public void setCanAddVideo(boolean canAddVideo) {
+    public void setCanAddVideo(String canAddVideo) {
         this.canAddVideo = canAddVideo;
     }
+
 
     public boolean isRegisteredUser() {
         return registeredUser;
@@ -73,14 +102,6 @@ public class PostContent {
         this.registeredUser = registeredUser;
     }
 
-    private int postId;
-    private int ownerId;
-    private String text;
-    private int link;
-    private String imageUrl;
-    private boolean canAddImage;
-    private boolean canAddAudio;
-    private boolean canAddVideo;
-    private boolean registeredUser;
+
 }
 

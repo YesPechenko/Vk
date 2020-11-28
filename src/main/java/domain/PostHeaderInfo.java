@@ -1,6 +1,13 @@
 package domain;
 
 public class PostHeaderInfo {
+    private int id;
+    private int imageIdUrl;
+    private int name;
+    private int postAuthor;
+    private long date;
+    private long time;
+
     public int getId() {
         return id;
     }
@@ -49,10 +56,5 @@ public class PostHeaderInfo {
         this.time = time;
     }
 
-    private int id;
-    private int imageIdUrl;
-    private int name;
-    private int postAuthor;
-    private long date;
-    private long time;
+
 }

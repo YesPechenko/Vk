@@ -1,6 +1,8 @@
 package domain;
 
 public class ViewsInfo {
+    private int quantity;
+
     public int getQuantity() {
         return quantity;
     }
@@ -9,5 +11,5 @@ public class ViewsInfo {
         this.quantity = quantity;
     }
 
-    private int quantity;
+
 }
